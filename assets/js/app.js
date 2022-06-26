@@ -92,6 +92,8 @@ function createWeatherDetails(userInput){
       currentDayTemp.textContent = weatherData.current.temp + '° F';
       currentDayWind.textContent = weatherData.current.wind_speed + " MPH";
       $(currentDayUv).text(weatherData.current.uvi);
+
+      $("#currentdata").css({"display":"block"});
       //Daily Weather data for the searched City
       var daily = weatherData.daily;
 
@@ -130,7 +132,7 @@ function createWeatherDetails(userInput){
                 $(".card-deck").append(dailyDiv);
 
                 //displays this html to the user
-              //  $("#five-day").css({"display":"block"});
+               $("#five-day").css({"display":"block"});
             }
 
 
