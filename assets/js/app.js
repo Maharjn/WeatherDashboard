@@ -151,19 +151,21 @@ searchForm.addEventListener('submit', function (event) {
 
 });
 function citySearchList() {
-  //cityName = localStorage.getItem("cityname");
+  cityName = localStorage.getItem("cityname");
+  
   console.log("City name" + localStorage.getItem("cityname"));
   if (cityName !== null) {
-
+   // alert("inside citySearchList");
     var cityList = $("<button>");
     cityList.addClass("list-group-item list-group-item-action");
-    cityList.text(localStorage.getItem("cityname"));
+    cityList.text(cityName);
     $("ul").prepend(cityList);
     $(inputSearch).val("");
   }
 }
 
 $("ul").on("click", "button", function () {
+  //alert("inside ul");
   cityName = $(this).text();
   console.log(cityName);
 
@@ -175,13 +177,13 @@ init();
 //function to display the last searched city's data
 function init() {
   cityName = localStorage.getItem("cityname");
+//alert("inside init");
   if (cityName !== null) {
-
-   /*  var cityList = $("<button>");
+     var cityList = $("<button>");
     cityList.addClass("list-group-item list-group-item-action");
     cityList.text(cityName);
     console.log(cityList.text(cityName));
-    $("ul").prepend(cityList); */
+    $("ul").prepend(cityList); 
     createWeatherDetails(cityName);
   }
 }
