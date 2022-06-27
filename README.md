@@ -1,5 +1,4 @@
 # WeatherDashboard
-# WorkDayScheduler
 ## Table of contents
 * [General info](#general-info)
 * [Website Link](#website-link)
@@ -24,7 +23,7 @@ This is a weather dashboard that will allow a user to search for a city and disp
 
 ## Website Link
 
-> Live link []
+> Live link [https://maharjn.github.io/WeatherDashboard/]
 
 ## Screenshot
 The following image shows the web application's appearance and functionality:
