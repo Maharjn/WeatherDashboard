@@ -177,11 +177,11 @@ function init() {
   cityName = localStorage.getItem("cityname");
   if (cityName !== null) {
 
-    var cityList = $("<button>");
+   /*  var cityList = $("<button>");
     cityList.addClass("list-group-item list-group-item-action");
     cityList.text(cityName);
     console.log(cityList.text(cityName));
-    $("ul").prepend(cityList); 
+    $("ul").prepend(cityList); */
     createWeatherDetails(cityName);
   }
 }
